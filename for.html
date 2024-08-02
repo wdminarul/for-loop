@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+    <style>
+        p{
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="sum"></p>
+    <p id="dicrementSum"></p>
+    <p id="somostiSum"></p>
+    <script>
+        let sum = 0;
+        for(i=200;i<=250;i++){
+            sum = sum + i;
+            let innerContent = "This is number of 200 to 250 all sum" +"="+ sum;
+            document.getElementById('sum').innerHTML=innerContent;
+        }
+        let n = 0;
+        for(i=200; i >=0; i--){
+            n = n + i;
+            let innerDicri = "This is number of 200 to 0 dicremental all sum"+"="+ n;
+            document.getElementById('dicrementSum').innerHTML=innerDicri;
+        }
+
+        // 1 theke 300 number er samosti lopp
+        let num = 0;
+        for(i = 0; i <=300; i++){
+            num = num + i;
+            let somosti = "0 Theke 300 number er somosti jog"+"="+num;
+            document.getElementById('somostiSum').innerHTML=somosti;
+        }
+    </script>
+</body>
+</html>
